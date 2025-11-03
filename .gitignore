@@ -1,0 +1,48 @@
+# Ignore build outputs
+/bin/
+/obj/
+
+# Ignore any bin/ or obj/ directories recursively
+**/bin/
+**/obj/
+
+# Visual Studio and VS Code settings
+.vscode/
+.vs/
+
+# Rider
+.idea/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+/packages/
+
+# Build results
+*.dll
+*.exe
+*.pdb
+*.app
+*.appx
+*.msi
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# ReSharper
+_ReSharper*/
+
+# dotCover
+*.dcvr
+
+# Code workspace
+*.code-workspace
