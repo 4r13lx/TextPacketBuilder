@@ -46,3 +46,6 @@ _ReSharper*/
 
 # Code workspace
 *.code-workspace
+
+# Test results
+Tests/TestResults/
