@@ -8,9 +8,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
         dotnet-version: [ '8.0' ]
 
     steps:
@@ -21,11 +22,27 @@ jobs:
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
 
+    - name: Cache NuGet packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.nuget/packages
+        key: nuget-${{ matrix.os }}-${{ hashFiles('**/packages.lock.json') }}
+        restore-keys: |
+          nuget-${{ matrix.os }}-
+
     - name: Restore
       run: dotnet restore TextPacketBuilder.sln
 
     - name: Build
       run: dotnet build TextPacketBuilder.sln --no-restore --configuration Release
 
-    - name: Test
-      run: dotnet test Tests/Tests.csproj --no-build --verbosity normal
+    - name: Test with coverage
+      run: |
+        dotnet test Tests/Tests.csproj --no-build --verbosity normal --collect:"XPlat Code Coverage"
+
+    - name: Upload coverage artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: code-coverage
+        path: Tests/TestResults/**/coverage.cobertura.xml
