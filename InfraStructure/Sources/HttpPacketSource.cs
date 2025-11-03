@@ -3,7 +3,7 @@ using Domain.Entities;
 using Domain.Interfaces;
 using InfraStructure.Parsers;
 
-namespace Infrastructure.Sources;
+namespace InfraStructure.Sources;
 
 public class HttpPacketSource : IPacketSource
 {
