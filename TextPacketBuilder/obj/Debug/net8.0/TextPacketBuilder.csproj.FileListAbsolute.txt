@@ -1,0 +1,14 @@
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/bin/Debug/net8.0/TextPacketBuilder
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/bin/Debug/net8.0/TextPacketBuilder.deps.json
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/bin/Debug/net8.0/TextPacketBuilder.runtimeconfig.json
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/bin/Debug/net8.0/TextPacketBuilder.dll
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/bin/Debug/net8.0/TextPacketBuilder.pdb
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/TextPacketBuilder.GeneratedMSBuildEditorConfig.editorconfig
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/TextPacketBuilder.AssemblyInfoInputs.cache
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/TextPacketBuilder.AssemblyInfo.cs
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/TextPacketBuilder.csproj.CoreCompileInputs.cache
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/TextPacketBuilder.dll
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/refint/TextPacketBuilder.dll
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/TextPacketBuilder.pdb
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/TextPacketBuilder.genruntimeconfig.cache
+/home/arielx/repo/TextPacketBuilder/TextPacketBuilder/obj/Debug/net8.0/ref/TextPacketBuilder.dll

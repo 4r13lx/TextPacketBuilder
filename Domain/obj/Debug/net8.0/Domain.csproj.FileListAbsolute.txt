@@ -1,0 +1,11 @@
+/home/arielx/repo/TextPacketBuilder/Domain/bin/Debug/net8.0/Domain.deps.json
+/home/arielx/repo/TextPacketBuilder/Domain/bin/Debug/net8.0/Domain.dll
+/home/arielx/repo/TextPacketBuilder/Domain/bin/Debug/net8.0/Domain.pdb
+/home/arielx/repo/TextPacketBuilder/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/arielx/repo/TextPacketBuilder/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/home/arielx/repo/TextPacketBuilder/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/home/arielx/repo/TextPacketBuilder/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/home/arielx/repo/TextPacketBuilder/Domain/obj/Debug/net8.0/Domain.dll
+/home/arielx/repo/TextPacketBuilder/Domain/obj/Debug/net8.0/refint/Domain.dll
+/home/arielx/repo/TextPacketBuilder/Domain/obj/Debug/net8.0/Domain.pdb
+/home/arielx/repo/TextPacketBuilder/Domain/obj/Debug/net8.0/ref/Domain.dll

@@ -1,0 +1,15 @@
+/home/arielx/repo/TextPacketBuilder/InfraStructure/bin/Debug/net8.0/InfraStructure.deps.json
+/home/arielx/repo/TextPacketBuilder/InfraStructure/bin/Debug/net8.0/InfraStructure.dll
+/home/arielx/repo/TextPacketBuilder/InfraStructure/bin/Debug/net8.0/InfraStructure.pdb
+/home/arielx/repo/TextPacketBuilder/InfraStructure/bin/Debug/net8.0/Domain.dll
+/home/arielx/repo/TextPacketBuilder/InfraStructure/bin/Debug/net8.0/Domain.pdb
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/InfraStructure.csproj.AssemblyReference.cache
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/InfraStructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/InfraStructure.AssemblyInfoInputs.cache
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/InfraStructure.AssemblyInfo.cs
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/InfraStructure.csproj.CoreCompileInputs.cache
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/InfraStr.570FDCE2.Up2Date
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/InfraStructure.dll
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/refint/InfraStructure.dll
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/InfraStructure.pdb
+/home/arielx/repo/TextPacketBuilder/InfraStructure/obj/Debug/net8.0/ref/InfraStructure.dll
