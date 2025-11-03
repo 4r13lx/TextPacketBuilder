@@ -8,13 +8,13 @@ namespace Application.Services;
 public class TextRetrievalService
 {
     private readonly IPacketSource _packetSource;
-    private readonly PacketValidator _validator;
+    private readonly Domain.Interfaces.IPacketValidator _validator;
     private readonly TextAssembler _assembler;
     private readonly ILogger<TextRetrievalService> _logger;
 
     public TextRetrievalService(
         IPacketSource packetSource,
-        PacketValidator validator,
+    Domain.Interfaces.IPacketValidator validator,
         TextAssembler assembler,
         ILogger<TextRetrievalService> logger)
     {

@@ -1,4 +1,6 @@
 ﻿using Application.Services;
+using Polly;
+using Polly.Extensions.Http;
 using Domain.Services;
 using Domain.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +20,9 @@ var packetSourceType = Environment.GetEnvironmentVariable("PACKET_SOURCE_TYPE") 
 services.AddHttpClient<InfraStructure.Sources.HttpPacketSource>(client =>
 {
     client.BaseAddress = new Uri(Environment.GetEnvironmentVariable("PACKET_SOURCE_BASEURL") ?? "http://test.com:8080");
-});
+})
+// Polly retry: retry 3 times with exponential backoff
+.AddTransientHttpErrorPolicy(p => p.WaitAndRetryAsync(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
 
 // Register IPacketSource depending on configuration
 if (packetSourceType.Equals("mock", StringComparison.OrdinalIgnoreCase))

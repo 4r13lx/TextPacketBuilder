@@ -3,7 +3,9 @@ using Domain.Entities;
 
 namespace Domain.Services;
 
-public class PacketValidator
+using Domain.Interfaces;
+
+public class PacketValidator : IPacketValidator
 {
     public bool Validate(IEnumerable<TextPacket> packets)
     {
