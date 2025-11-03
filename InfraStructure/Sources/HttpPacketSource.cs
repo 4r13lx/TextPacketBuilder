@@ -8,10 +8,10 @@ namespace InfraStructure.Sources;
 public class HttpPacketSource : IPacketSource
 {
     private readonly HttpClient _httpClient;
-
-    public HttpPacketSource(string baseUrl)
+    // Constructor used by DI when AddHttpClient<T> is registered
+    public HttpPacketSource(HttpClient httpClient)
     {
-        _httpClient = new HttpClient { BaseAddress = new Uri(baseUrl) };
+        _httpClient = httpClient;
     }
 
     public async Task<IEnumerable<TextPacket>> GetTextPacketsAsync()
