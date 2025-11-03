@@ -1,7 +1,7 @@
 using System.Net.Http.Json;
 using Domain.Entities;
 using Domain.Interfaces;
-using Infrastructure.Parsers;
+using InfraStructure.Parsers;
 
 namespace Infrastructure.Sources;
 

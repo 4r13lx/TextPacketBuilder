@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Infrastructure.Parsers
+namespace InfraStructure.Parsers
 {
     public class Packet
     {

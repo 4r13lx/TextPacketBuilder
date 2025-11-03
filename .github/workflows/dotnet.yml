@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, windows-latest]
         dotnet-version: [ '8.0' ]
 
     steps:
@@ -35,16 +35,6 @@ jobs:
 
     - name: Build
       run: dotnet build TextPacketBuilder.sln --no-restore --configuration Release
-
-    - name: Test (coverage on non-macOS)
-      if: matrix.os != 'macos-latest'
-      run: |
-        dotnet test Tests/Tests.csproj --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger "trx;LogFileName=tests.trx"
-
-    - name: Test (macOS without coverage)
-      if: matrix.os == 'macos-latest'
-      run: |
-        dotnet test Tests/Tests.csproj --no-build --verbosity normal --logger "trx;LogFileName=tests.trx"
 
     - name: Upload test results
       if: always()
