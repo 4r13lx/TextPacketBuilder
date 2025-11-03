@@ -1,0 +1,11 @@
+
+services:
+  consoleapp:
+    image: consoleapp
+    build:
+      context: .
+      dockerfile: TextPacketBuilder/Dockerfile
+      args:
+        - configuration=Debug
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
