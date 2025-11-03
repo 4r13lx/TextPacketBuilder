@@ -40,12 +40,12 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: test-results
+        name: test-results-${{ matrix.os }}-${{ github.run_id }}
         path: Tests/TestResults/**/tests.trx
 
     - name: Upload coverage artifact
       if: always() && matrix.os != 'macos-latest'
       uses: actions/upload-artifact@v4
       with:
-        name: code-coverage
+        name: code-coverage-${{ matrix.os }}-${{ github.run_id }}
         path: Tests/TestResults/**/coverage.cobertura.xml
